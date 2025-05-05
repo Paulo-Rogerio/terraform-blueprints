@@ -3,7 +3,7 @@
 # VPC
 # ------------------------------------------------------------------------------
 module "vpc" {
-  source = "git::https://github.com/Paulo-Rogerio/terraform-modules?ref=main/tree/main/cloudstack/vpc"
+  source = "git::https://github.com/Paulo-Rogerio/terraform-modules.git//cloudstack/vpc?ref=v0.0.1"
 
   name         = "test-vpc"
   cidr         = "10.0.0.0/16"

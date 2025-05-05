@@ -1,9 +1,9 @@
-terraform {
 
+terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
+    cloudstack = {
+      source = "cloudstack/cloudstack"
+      version = "0.5.0"
     }
   }
 }

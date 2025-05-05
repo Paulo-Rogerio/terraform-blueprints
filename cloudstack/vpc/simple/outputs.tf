@@ -12,13 +12,4 @@ output "vpc_name" {
   value       = module.vpc.name
 }
 
-output "vpc_cidr_block" {
-  description = "The VPC CIDR block"
-  value       = module.vpc.vpc_cidr_block
-}
-
-output "azs" {
-  description = "The list of eligible AZs for provisioning the VPC subnets"
-  value       = module.vpc.azs
-}
 

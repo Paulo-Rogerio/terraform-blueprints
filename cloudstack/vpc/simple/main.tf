@@ -8,7 +8,7 @@ provider "cloudstack" {
 
 
 module "vpc" {
-  source = "git::https://github.com/Paulo-Rogerio/terraform-modules.git//cloudstack/vpc?ref=v0.0.2"
+  source = "git::https://github.com/Paulo-Rogerio/terraform-modules.git//cloudstack/vpc?ref=v0.0.3"
 
   # source = "../../../../terraform-modules/cloudstack/vpc"
 

@@ -3,10 +3,6 @@
 # VPC
 # ------------------------------------------------------------------------------
 
-provider "cloudstack" {
-}
-
-
 module "vpc" {
   source = "git::https://github.com/Paulo-Rogerio/terraform-modules.git//cloudstack/vpc?ref=v0.0.3"
 

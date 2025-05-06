@@ -7,7 +7,7 @@ module "vpc" {
   source = "git::https://github.com/Paulo-Rogerio/terraform-modules.git//cloudstack/vpc?ref=v0.0.5"
 
 
-  name                     = "simple-example"
+  name                     = var.name
   cidr                     = "10.0.0.0/16"
   zone                     = "Enterprise_Internet_Bi"
   vpc_offering             = "Paulera VPC offering"

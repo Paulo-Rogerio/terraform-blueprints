@@ -16,7 +16,7 @@ output "vpc_display_text" {
   value       = module.vpc.vpc_display_text
 }
 
-output "vpc_network_ids" {
-  description = "The IDs of the network/tier in the VPC"
-  value       = module.vpc.network_id
-}
+#output "vpc_network_ids" {
+#  description = "The IDs of the network/tier in the VPC"
+#  value       = module.vpc.network_id
+#}

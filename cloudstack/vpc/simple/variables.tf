@@ -6,25 +6,10 @@ variable "name" {
   type        = string
 }
 
-# --------------------------------------------------------------------------
-# REQUIRED PARAMETERS
-# These parameters needs to be configured
-# --------------------------------------------------------------------------
-
-variable "name" {
-  description = "Name to be used on all resources as prefix"
-  type        = string
-}
-
 variable "zone" {
   description = "Name or ID of the zone where the VPC should be deployed"
   type        = string
 }
-
-# --------------------------------------------------------------------------
-# OPTIONAL PARAMETERS
-# These parameters have reasonable defaults.
-# --------------------------------------------------------------------------
 
 variable "cidr" {
   description = "The CIDR block for the VPC. Default value is a valid CIDR, but not acceptable by CS and should be overridden"

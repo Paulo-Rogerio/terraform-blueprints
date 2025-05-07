@@ -14,16 +14,17 @@ module "vpc" {
   default_network_offering = var.default_network_offering
   subnet_names             = var.subnet_names
 
-  tags = merge(
-    {
-      "Name" = format("%s", var.name)
-    },
-    var.tags
-  )
+  #tags = merge(
+  #  {
+  #    "Name" = format("%s", var.name)
+  #  },
+  #  var.tags
+  #)
 
-  #tags = {
-  #  Terraform   = "true"
-  #  Environment = "dev"
-  #}
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+
 }
 
